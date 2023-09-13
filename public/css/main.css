@@ -1,0 +1,389 @@
+/* Home page css */
+body{
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    background: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.right{
+    flex-grow: revert;
+    margin-right: 87px;
+}
+.tcolor{
+    color: white;
+}
+.tcolor:hover{
+    color: aqua;
+}
+.right ul li{
+    margin-left: 30px;
+}
+.he{
+    height: 7vh;
+}
+.bodycon{
+    border: 2px solid black;
+    height: 88.8vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+.foot{
+    /* background-color: aqua; */
+    height: 4vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.textcon{
+/* border: 2px solid blue; */
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgcon{
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* background-color: aqua; */
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.extra{
+    margin-left: 185px;
+    padding-left: 0px;
+}
+.wlcomepera{
+    font-size: 21px;
+    font-family: 'DM Serif Display', serif;
+}
+.info{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 600;
+}
+b{
+    color: rgb(0, 249, 232);
+}
+.clickme{
+    margin-top: 31px;
+    padding: 8px;
+    border-radius: 22px;
+    box-shadow: 6px 8px 25px black;
+    background: rgb(9, 24, 67);
+    border: none;
+    color: white;
+}
+.clickme:hover{
+    background: rgb(5, 14, 34);
+    color: rgb(0, 249, 232);
+}
+.navbar-brand{
+    margin-left: 34px;
+}
+.smallSize{
+    height: 425px;
+    width: 630px !important;
+    /* margin-right: 100px; */
+}
+.largesize{
+    height: 381px;
+    width: 630px !important;
+}
+.round{
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+@media (max-width:1200px) {
+    .moderatesize{
+        width: 500px;
+    }
+    .smallSize{
+        width: 500px !important;
+    }
+    .largesize{
+        width: 500px !important;
+    }
+    
+}
+
+@media (max-width:1082px) {
+    .extra{
+        margin-left: 100px;
+    }
+}
+@media (max-width:950px) {
+    .extra{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bodycon{
+        display: flex;
+        flex-direction: column-reverse;
+        /* background-color: red; */
+    }
+    .imgcon{
+        display: flex;
+        justify-content: center;
+    }
+    .wlcomepera {
+        text-align: center;
+    }
+    .imgcon{
+        margin-top: 14px;
+    }
+}
+@media (max-width:610px) {
+    .moderatesize{
+        width: 300px;
+        height: 200px;
+    }
+    .smallSize{
+        width: 300px !important;
+        height: 300px;
+    }
+    .largesize{
+        width: 300px !important;
+        height: 200px;
+    }
+    .info{
+        font-size: 16px;
+    }
+    .wlcomepera{
+        font-size: 15px;
+    }
+    .extra{
+        margin-top: -111px;
+    }
+    .imgcon{
+        margin-top: 14px;
+    }
+}
+
+/* weather page */
+.bodycon2{
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    margin-top: 5rem;
+    /* border: 2px solid blue; */
+}
+#textbox{
+    border: 1px solid;
+    padding-right: 258px;
+    padding-left: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+#textbox::placeholder{
+    color: white    ;
+}
+.btn{
+    margin-top: -6px;
+    border-radius: 17px;
+}
+.searchInfo{
+    margin-top: 12vh;
+    width: 492px;
+    height: 34vh;
+    margin-left: -30px;
+    border-radius: 28px;
+    box-shadow: 10px 10px 5px #525252;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.daydata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:1vh;
+    background: #423636;
+    border-top-right-radius:28px;
+    align-items: center ;
+    border-top-left-radius:28px;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.weatherinfo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;    
+    font-size: 72px;
+}
+#csize{
+    margin-top: 18px;
+    animation: zoomeffect 3s linear infinite alternate;
+}
+.previous{
+    /* border: 2px solid; */
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+    /* text-decoration: none; */
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 800;
+}
+@media (max-width:1246px) {
+    .weatherinfo{
+        margin-top: -3px;
+    }
+}
+@media (max-width:594px) {
+    .searchInfo{
+        margin-left: 0px
+    }
+    #textbox{
+        padding-right: 112px;
+        padding-left: 20px;
+    }
+    .searchInfo{
+        width: 350px;
+        height: 41vh;
+        margin-top: 10hv;
+    }
+}
+@media (max-width:409px) {
+    .searchInfo{
+        margin-left: 0px
+    }
+    #textbox{
+        padding-right: 40px;
+        padding-left: 17px;
+    }
+    .weatherinfo{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: -18px;
+    }
+    .searchInfo {
+        width: 287px;
+        height: 47vh;
+    }
+    .searchbox{
+        margin-top: 3rem;
+    }
+}
+@keyframes zoomeffect {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+/* about page css */
+.imagesize{
+    height: 415px;
+    width: 477px;
+    margin-left: 50px;
+}
+.extra2{
+    margin-left: 100px;
+}
+#myname{
+    font-size: 27px;
+}
+.sizechange{
+    font-size: x-large;
+}
+@media (max-width:955px) {
+    .bodycon3{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagesize{
+        margin-left: 0px;
+    }
+    .extra2{
+        margin-left: 50px;
+    }
+    
+}
+.info1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 600;
+}
+@media (max-width:500px) {
+    .imagesize{
+        height: 273px;
+        width: 310px;
+    }
+    .extra2{
+        margin-left: 30px;
+        /* margin-top: -135px; */
+    }
+    
+}
+
+/* 404 error page  */
+.errorsize{
+    height: 200px;
+    width: 300px;
+}
+.secon{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errormes{
+    font-family: Font Error;
+}
+.abutton{
+    text-decoration: none;
+    border: 2px solid;
+    padding: 6px;
+    border-radius: 23px;
+    margin-top: 27px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+/* .navbar-toggler-icon{ */
+    /* background-image:var(--bs-navbar-toggler-icon-bg) !important ; */
+/* } */
+/* .nevbar{ */
+    /* --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%255,255,255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>); */
+/* } */
+.navbar-toggler{
+    border: 2px solid white;
+    background: white;
+}
+#textbig{
+    font-size: large;
+}
